@@ -2,7 +2,7 @@ use chrono::{DateTime, Local};
 use rusqlite::{Connection, params};
 use serde::Deserialize;
 use std::{collections::HashMap, env, fs, path::PathBuf, thread, time::Duration};
-
+// use std::os::unix::fs::PermissionsExt;
 #[derive(Deserialize)]
 struct Config {
     tracked: Vec<String>,
